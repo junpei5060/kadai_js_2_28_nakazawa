@@ -84,4 +84,42 @@
     animation: SlideIn 2s;
 }
 
+@media screen and (max-width: 479px) {
+.about{
+margin-top: 80px;
+text-align: center;
+font-size: 12px;
+margin-bottom: 20px;
+animation: SlideIn 1.2s;
+}
+
+.vision{
+text-align: center;
+font-size: 20px;
+padding-bottom: 10px;
+margin: 0;
+animation: SlideIn 1.2s;
+}
+
+.vision-title{
+text-align: center;
+font-weight: bold;
+font-size: 24px;
+margin: 0px;
+color: #FF8C00;
+background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: SlideIn 1.8s;
+}
+
+.text{
+text-align: center;
+animation: SlideIn 2s;
+width: 300px;
+}
+
+}
+
+
 </style>

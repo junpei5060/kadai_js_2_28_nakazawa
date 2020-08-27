@@ -132,5 +132,80 @@ box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
     text-align: center;
 }
 
+@media screen and (max-width: 479px) {
+.team{
+    font-size: 28px;
+}
+
+.team-text{
+margin-top: 150px;
+margin-left: 50px;
+font-size: 16px;
+}
+
+.about-team{
+text-align: center;
+font-weight: bold;
+font-size: 12px;
+}
+
+.text{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn,
+a.btn,
+button.btn {
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 1.1;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #212529;
+border-radius: 0.5rem;
+}
+
+a.btn-gradient {
+-webkit-transform: skew(-15deg);
+transform: skew(-15deg);
+color: #fff;
+border-radius: 0;
+background-image: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
+background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+a.btn-gradient:hover {
+-webkit-transform: skew(0);
+transform: skew(0);
+color: #fff;
+-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+.btn-container{
+    text-align: center;
+}
+.check{
+font-size: 24px;
+}
+}
+
 
 </style>

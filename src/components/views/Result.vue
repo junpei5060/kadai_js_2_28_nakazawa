@@ -53,19 +53,19 @@ export default {
 }
 
 .typing{
-    color:rgb(255, 255, 255);
-    width: 100%; 
-    height: 3em;
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    top: 0%;
-    left: 0%;
-    bottom: 200px;
-    z-index: 2;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
+color:rgb(255, 255, 255);
+width: 100%; 
+height: 3em;
+text-align: center;
+position: absolute;
+margin: auto;
+top: 0%;
+left: 0%;
+bottom: 200px;
+z-index: 2;
+white-space: nowrap;
+overflow: hidden;
+transform: translateY(-50%);
 
 }
 
@@ -87,6 +87,29 @@ text-decoration: none;/*下線を表示させない*/
 z-index: 3;
 width: 400px;
 text-align: center;
+}
+
+@media screen and (max-width: 479px) {
+.btn{
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+/*以下装飾*/
+margin:0;/*余計な隙間を除く*/
+font-size: 14px;/*文字サイズ*/
+border: solid white 2px; /*線で囲う*/
+padding: 7px;/*文字と線の間の余白*/
+color: white;/*文字色*/
+text-decoration: none;/*下線を表示させない*/
+z-index: 3;
+width: 200px;
+text-align: center;
+}
+
+
 }
 
 

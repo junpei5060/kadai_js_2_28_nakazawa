@@ -42,67 +42,67 @@ export default {
 }
 
 #bgimg{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background: url('https://cdn.pixabay.com/photo/2016/11/22/22/17/action-1850887_1280.jpg') top center / cover no-repeat;
-    z-index: 1;
-    opacity: 0.5;
-    position: relative;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+background: url('https://cdn.pixabay.com/photo/2016/11/22/22/17/action-1850887_1280.jpg') top center / cover no-repeat;
+z-index: 1;
+opacity: 0.5;
+position: relative;
 }
 
 h1{
-    font-weight: bold;
-    color:rgb(255, 255, 255);
-    width: 100%; 
-    height: 1.5em;
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 300px;
-    z-index: 2;
-    animation-name: fadein;
-    animation-duration: 2s;
-    font-family :Quicksand, sans-serif;/*Google Font*/
+font-weight: bold;
+color:rgb(255, 255, 255);
+width: 100%; 
+height: 1.5em;
+text-align: center;
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 300px;
+z-index: 2;
+animation-name: fadein;
+animation-duration: 2s;
+font-family :Quicksand, sans-serif;/*Google Font*/
 
 }
 
 @keyframes fadein {
 from {
-    opacity: 0;
-    transform: translateY(20px);
+opacity: 0;
+transform: translateY(20px);
 }
 to {
-    opacity: 1;
-    transform: translateY(0);
+opacity: 1;
+transform: translateY(0);
 }
 }
 
 p{
-    font-weight: bold;
-    font-size: 20px;
-    color:rgb(255, 255, 255);
-    width: 100%; 
-    height: 1.5em;
-    text-align: center;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 0%;
-    bottom: 0%;
-    z-index: 3;
-    animation-name: fadein;
-    animation-duration: 2s; 
-    padding: 0.5em 1em;
-    background: -moz-linear-gradient(#5eccc7, #ebf18d);
-    background: -webkit-linear-gradient(#ffb03c, #5192e7);
-    background: linear-gradient(to right, #20ce4b, #cfd5f3);
-    color: #FFF;
+font-weight: bold;
+font-size: 20px;
+color:rgb(255, 255, 255);
+width: 100%; 
+height: 1.5em;
+text-align: center;
+position: absolute;
+margin: 0;
+padding: 0;
+top: 50%;
+left: 0%;
+bottom: 0%;
+z-index: 3;
+animation-name: fadein;
+animation-duration: 2s; 
+padding: 0.5em 1em;
+background: -moz-linear-gradient(#5eccc7, #ebf18d);
+background: -webkit-linear-gradient(#ffb03c, #5192e7);
+background: linear-gradient(to right, #20ce4b, #cfd5f3);
+color: #FFF;
 }
 
 .yes-button{
@@ -146,7 +146,87 @@ a:hover{
     background: rgba(255, 255, 255, 0.3);
 }
 
+@media screen and (max-width: 479px) {
 
+h1{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    width: 300px; 
+    height: 1.5em;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 300px;
+    z-index: 2;
+    animation-name: fadein;
+    animation-duration: 2s;
+    font-family :Quicksand, sans-serif;/*Google Font*/
+    font-size: 16px;
+    left: 10%;
+}
+
+p{
+font-weight: bold;
+font-size: 14px;
+color:rgb(255, 255, 255);
+width: 100%; 
+height: 1.5em;
+text-align: center;
+position: absolute;
+margin: 0;
+padding: 0;
+top: 50%;
+left: 0%;
+bottom: 0%;
+z-index: 3;
+animation-name: fadein;
+animation-duration: 2s; 
+padding: 0.5em 1em;
+background: -moz-linear-gradient(#5eccc7, #ebf18d);
+background: -webkit-linear-gradient(#ffb03c, #5192e7);
+background: linear-gradient(to right, #20ce4b, #cfd5f3);
+color: #FFF;
+}
+
+.yes-button{
+position: absolute;
+top: 70%;
+left: 30%;
+-ms-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+/*以下装飾*/
+margin:0;/*余計な隙間を除く*/
+font-size: 12px;/*文字サイズ*/
+border: solid white 2px; /*線で囲う*/
+padding: 7px;/*文字と線の間の余白*/
+color: white;/*文字色*/
+text-decoration: none;/*下線を表示させない*/
+z-index: 3;
+width: 50px;
+text-align: center;
+}
+.no-button{
+position: absolute;
+top: 70%;
+left: 70%;
+-ms-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+/*以下装飾*/
+margin:0;/*余計な隙間を除く*/
+font-size: 12px;/*文字サイズ*/
+border: solid white 2px; /*線で囲う*/
+padding: 7px;/*文字と線の間の余白*/
+color: white;/*文字色*/
+text-decoration: none;/*下線を表示させない*/
+z-index: 3;
+width: 50px;
+text-align: center;
+}
+
+}
 
 
 </style>

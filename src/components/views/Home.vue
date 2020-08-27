@@ -316,4 +316,95 @@ text-shadow: 0 0 15px rgba(209, 214, 215, 0.5),
 0 0 15px rgba(209, 214, 215, 0.5), 0 0 15px rgba(209, 214, 215, 0.5),
 0 0 15px rgba(209, 214, 215, 0.5);
 }
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+.lions{
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+background: url('https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045__480.jpg') top center / cover no-repeat;
+z-index: 1;
+object-fit: cover;
+}
+
+.lions p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3FB811;
+    width: 300px;
+}
+
+.lions h2 {
+margin: 0;
+font-size: 50px;
+font-weight: normal;
+color: #0067C0;
+font-weight: bold;
+}
+
+.hawks{
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+background: url('https://images.unsplash.com/photo-1596465466716-19bfa62aaa32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60') top center / cover no-repeat;
+z-index: 1;
+}
+
+.hawks p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3FB811;
+    width: 300px;
+}
+
+.hawks h2 {
+margin: 0;
+font-size: 50px;
+font-weight: normal;
+color:#FFD400;
+font-weight: bold;
+}
+
+.rakuten p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3FB811;
+    width: 300px; 
+}
+.marines p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3FB811;
+    width: 300px;
+}
+.fighters p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3FB811;
+    width: 300px;
+}
+.buffaloes p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3FB811;
+    width: 300px;
+}
+
+.marines{
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100%;
+background: url('https://images.unsplash.com/photo-1592995191486-4e6f1818b403?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60') top center / cover no-repeat;
+z-index: 1;
+}
+}
 </style>

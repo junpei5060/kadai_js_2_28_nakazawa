@@ -109,10 +109,10 @@ position: relative;
 }
 
 .step{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-bottom: 40px;
+display: flex;
+justify-content: space-around;
+text-align: center;
+margin-bottom: 40px;
 }
 
 .text1{
@@ -177,6 +177,95 @@ background: linear-gradient(to top, rgb(23, 157, 219), rgb(238, 150, 150));
 text-shadow: 0 0 15px rgba(106, 226, 206, 0.5),
 0 0 15px rgba(209, 214, 215, 0.5), 0 0 15px rgba(209, 214, 215, 0.5),
 0 0 15px rgba(209, 214, 215, 0.5);
+}
+
+@media screen and (max-width: 479px) {
+.about{
+margin-top: 80px;
+text-align: center;
+font-size: 16px;
+margin-bottom: 30px;
+
+}
+
+.vision{
+text-align: center;
+font-size: 18px;
+padding-bottom: 0;
+margin: 0;
+}
+
+.vision-title{
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+margin: 0px;
+color: #FF8C00;
+background: -webkit-linear-gradient(0deg, rgb(16, 235, 213), #FF8C00, #FF0080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: SlideIn 1.8s;
+}
+
+.text{
+text-align: center;
+margin-bottom: 100px;
+font-size: 12px;
+}
+
+.usage{
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+height: 700px;
+width: 100%;
+background: url('https://images.unsplash.com/photo-1477951233099-d2c5fbd878ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60') top center / cover no-repeat;
+z-index: 1;
+opacity: 1;
+position: relative;
+}
+
+.step{
+display: flex;
+flex-direction: column;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.text1{
+margin: 0;
+}
+
+.text1 h2{
+font-size: 16px;
+}
+
+.btn,
+a.btn,
+button.btn {
+font-size: 0.9rem;
+font-weight: 700;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+padding: 1rem 4rem;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+color: #5d9bd8;
+border-radius: 0.5rem;
+}
+
+
 }
 
 </style>

@@ -87,7 +87,13 @@ font-weight: bold;
 }
 
 
+/* スマホ対応 */
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+body{
+  overflow:hidden;
+}
+
+
 header {
 padding: 30px 4% 10px;
 position: fixed;
@@ -98,39 +104,21 @@ display: flex;
 align-items: center;
 z-index: 2;
 }
-h1 {
+
+h1{
 margin: 0; padding: 0;
+font-size: 16px;
+}
+
+ul{
+list-style: none;
+display: flex;
+margin-right: 40px;
+font-weight: bold;
+}
+
+li{
 font-size: 12px;
 }
-
-router-link{
-    text-decoration: none;
-    color: #3FB811; 
 }
-
-li a {	
-text-decoration: none;
-color: #3FB811;
-}
-h1 a {	
-text-decoration: none;
-color: #3FB811;
-}
-nav {
-margin: 0 0 0 auto;
-}
-ul {
-list-style: none;
-margin: 0 auto;
-display: flex;
-margin-right: 130px;
-font-weight: bold;
-}
-li {
-margin: 0 0 0 15px;
-font-size: 16px;
-font-weight: bold;
-}
-}
-
 </style>
