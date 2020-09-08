@@ -9,12 +9,15 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "bootstrap-vue": "^2.16.0",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
+    "firebase": "^7.19.1",
     "jquery": "^2.2.4",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.1",
     "vue-carousel": "^0.18.0",
+    "vue-moment": "^4.1.0",
     "vue-router": "^3.4.3",
     "vue-slick": "^1.1.15",
     "vue-typed-js": "^0.1.2",

@@ -3,7 +3,7 @@
     <body>
       <header>
             <h1>
-                <a href="/">Find the Pacific League favourites</a><br>
+                <a href="/">One Tab CoLoFul</a><br>
             </h1>
             <nav class="pc-nav">
                 <ul>
@@ -12,16 +12,32 @@
                 </ul>
             </nav>
         </header>
-    <transition mode=”out-in”>
+      <home></home>
       <router-view></router-view>
-    </transition>
     </body>
   </div>
 </template>
 
+<script>
+
+import Home from './components/views/Home'
+// // import Plus from './components/views/Plus'
+// import Memolist from './components/views/MemoList'
+
+export default {
+  name:'App',
+  components:{
+    Home,
+    // // Plus,
+    // Memolist
+  }
+}
+</script>
+
+
 <style scoped>
 header {
-padding: 30px 4% 10px;
+padding: 32px 4% 0px;
 position: fixed;
 top: 0;
 width: 100%;
@@ -33,21 +49,31 @@ z-index: 2;
 h1 {
 margin: 0; padding: 0;
 font-size: 24px;
+color: #FF8C00;
+background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 router-link{
     text-decoration: none;
-    color: #3FB811; 
 }
 
 li a {	
 text-decoration: none;
-color: #3FB811;
+color: #FF8C00;
+background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 h1 a {	
 text-decoration: none;
-color: #3FB811;
+color: #FF8C00;
+background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
+
 nav {
 margin: 0 0 0 auto;
 }
@@ -63,29 +89,6 @@ margin: 0 0 0 15px;
 font-size: 16px;
 font-weight: bold;
 }
-
-.v-enter {
-  transform: translate(-100px, 0);
-  opacity: 0;
-}
-.v-enter-to {
-  opacity: 1;
-}
-.v-enter-active {
-  transition: all 1s 0s ease;
-}
-.v-leave {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-.v-leave-to {
-  transform: translate(100px, 0);
-  opacity: 0;
-}
-.v-leave-active {
-  transition: all .3s 0s ease;
-}
-
 
 /* スマホ対応 */
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
@@ -113,7 +116,7 @@ font-size: 16px;
 ul{
 list-style: none;
 display: flex;
-margin-right: 40px;
+margin-right: 30px;
 font-weight: bold;
 }
 
