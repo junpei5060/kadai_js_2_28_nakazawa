@@ -52,7 +52,7 @@ object-fit: cover;
 .home h1{
 font-size: 50px;
 font-weight: bold;
-margin-right: 300px;
+margin-right: 0px;
 padding-top: 50px;
 margin-bottom: 10px;
 color: #FF8C00;
@@ -69,9 +69,8 @@ color: #FF8C00;
 background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
 margin: 0;
-margin-right: 300px;
+margin-right: 0px;
 }
 
 
@@ -147,4 +146,6 @@ width: 600px;
 .container-2:hover .icon{
 color: #FF0080;
 }
+
+
 </style>

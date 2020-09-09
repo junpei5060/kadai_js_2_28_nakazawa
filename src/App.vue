@@ -3,31 +3,31 @@
     <body>
       <header>
             <h1>
-                <a href="/">One Tab CoLoFul</a><br>
+                <a href="/">Brain Storage</a><br>
             </h1>
             <nav class="pc-nav">
                 <ul>
-                    <li><router-link to="/about">ABOUT</router-link></li>
-                    <li><router-link to="/service">SERVICE</router-link></li>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/form">新規作成</router-link></li>
                 </ul>
             </nav>
         </header>
-      <home></home>
+      <transition mode=”out-in”>
       <router-view></router-view>
+      </transition>
     </body>
   </div>
 </template>
 
 <script>
 
-import Home from './components/views/Home'
-// // import Plus from './components/views/Plus'
-// import Memolist from './components/views/MemoList'
+
+
 
 export default {
   name:'App',
   components:{
-    Home,
+    // Home,
     // // Plus,
     // Memolist
   }
@@ -59,13 +59,7 @@ router-link{
     text-decoration: none;
 }
 
-li a {	
-text-decoration: none;
-color: #FF8C00;
-background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
+
 h1 a {	
 text-decoration: none;
 color: #FF8C00;
@@ -81,14 +75,26 @@ ul {
 list-style: none;
 margin: 0 auto;
 display: flex;
-margin-right: 130px;
+margin-right: 80px;
 font-weight: bold;
 }
 li {
 margin: 0 0 0 15px;
 font-size: 16px;
 font-weight: bold;
+text-decoration: none;
+color: #FF8C00;
+background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
+v-enter-active, .v-leave-active {
+  transition: opacity .5s;
+}
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
+
 
 /* スマホ対応 */
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/

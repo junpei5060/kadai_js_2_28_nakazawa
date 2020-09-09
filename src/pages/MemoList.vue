@@ -1,32 +1,27 @@
 <template>
-<div class="memo-list container-fluent">
-<div class="row justify-content-start">
-    <memo-list-card
-    v-for="(memo, index) in memos"
-    v-bind:key="index"
-    v-bind:memo="memo"/>
-    <memo-list-form/>
-</div>
-<div class="row">
-    <button class="btn-sm btn-dark m-1"
-    v-for="(memo, index) in memos"
-    v-bind:key="index"
-    v-on:click="remove(memo.id)">
-    {{ memo.id }}
-    </button>
-</div>
+<div>
+<home></home>
+    <div class="memo-list container-fluent">
+        <div class="row justify-content-center">
+            <memo-list-card
+            v-for="(memo, index) in memos"
+            v-bind:key="index"
+            v-bind:memo="memo"/>
+        </div>
+
+    </div>
 </div>
 </template>
 
 <script>
+import Home from '../components/views/Home'
 import MemoListCard from '../components/views/MemoListCard'
-import MemoListForm from '../components/views/MemoListForm'
 
 export default {
 name: 'MemoList',
 components: {
+Home,
 'memo-list-card': MemoListCard,
-'memo-list-form': MemoListForm
 },
 data () {
 return {
@@ -67,5 +62,18 @@ text-align: center;
 }
 .row {
 margin-left: 0%;
+}
+.btn-delete{
+display: inline-block;
+text-decoration: none;
+background: #87befd;
+color: #FFF;
+width: 120px;
+height: 120px;
+line-height: 120px;
+border-radius: 50%;
+text-align: center;
+overflow: hidden;
+transition: .4s;
 }
 </style>

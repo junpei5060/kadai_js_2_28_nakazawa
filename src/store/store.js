@@ -8,7 +8,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
     modules: {
         memo: memo,
-        memos: memos
+        memos: memos,
     },
     strict: process.env.NODE_ENV !== 'production'
 })

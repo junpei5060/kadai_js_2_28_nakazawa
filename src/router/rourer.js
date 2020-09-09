@@ -2,9 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import VueCarousel from 'vue-carousel';
 import MemoList from '../pages/MemoList.vue'
-import About from '../components/views/About.vue';
-import MemoDetails from '../pages/MemoDetail.vue'
-import Service from '../components/views/Service.vue';
+import Form from '../components/views/MemoListForm.vue';
+import Thanks from '../components/views/Thanks.vue';
+
 
 Vue.use(Router);
 Vue.use(VueCarousel);
@@ -21,19 +21,10 @@ export default new Router({
         }
     },
     {
-        path: '/memo/:id',
-        name: 'MemoDetails',
-        component: MemoDetails,
-        props: true,
-        meta: {
-        title: 'details of memo'
-    },
+        path:'/form',component:Form
     },
     {
-        path:'/about',component:About
-    },
-    {
-        path:'/service', component:Service
+        path:'/thanks', component:Thanks
     },
 ]
 })
