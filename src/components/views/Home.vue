@@ -12,7 +12,10 @@
                 </router-link>
             </div>
             </div>
-            
+            <router-link to="form"
+            class="btn-circle-fishy">
+            Add
+            </router-link>
         </body>
     </div>
 </template>
@@ -202,6 +205,28 @@ body:before{
     width:100%;
     transition:800ms ease all;
 }
+.btn-circle-fishy {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    transition: .4s;
+    position: fixed;
+    bottom: 16px;
+    right: 28px;
+    z-index: 1;
+    opacity: 0.8;
+}
 
+.btn-circle-fishy:hover {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
 
 </style>
