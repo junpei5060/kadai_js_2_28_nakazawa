@@ -2,17 +2,17 @@
     <div container>
         <body>
             <div class="home">
-                <h1>CoLorFul</h1>
-                <p class="question">Make all tabs colorful
+                <h1>Brain Storage CoLorFul</h1>
+                <p class="subtitle">すべての記憶をここに保存しよう
                 </p>
-                    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-                        <div class="box">
-                        <div class="container-2">
-                            <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="search" id="search" placeholder="Search..." />
-                        </div>
-                    </div>
+                <div>
+                <router-link to="/form" class="button" type="submit"
+                @click.native.prevent="addMemo">
+                <span class="add-text">Add</span>
+                </router-link>
             </div>
+            </div>
+            
         </body>
     </div>
 </template>
@@ -47,6 +47,7 @@ background: url('https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib
 z-index: 1;
 margin-top: 96px;
 object-fit: cover;
+font-family: monospace;
 }
 
 .home h1{
@@ -73,6 +74,10 @@ margin: 0;
 margin-right: 0px;
 }
 
+.subtitle{
+padding-bottom: 30px;
+font-family: monospace;
+}
 
 .box{
 margin: 30px auto;
@@ -145,6 +150,57 @@ width: 600px;
 
 .container-2:hover .icon{
 color: #FF0080;
+}
+
+/* html,body{
+    height:100%;
+}
+body{
+    text-align:center;
+}
+body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+} */
+.button{
+    background:rgb(224, 108, 219);
+    color:#fff;
+    border:none;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2.7em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    width: 150px;
+    font-family: monospace;
+    padding-top: 15px;
+}
+.button:hover{
+    background:#fff;
+    color:rgb(224, 108, 219);
+}
+.button:before,.button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #da3c41;
+    transition:400ms ease all;
+}
+.button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.button:hover:before,.button:hover:after{
+    width:100%;
+    transition:800ms ease all;
 }
 
 

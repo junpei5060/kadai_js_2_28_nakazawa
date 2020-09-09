@@ -45,6 +45,7 @@ background-color: transparent;
 display: flex;
 align-items: center;
 z-index: 2;
+font-family: monospace;
 }
 h1 {
 margin: 0; padding: 0;

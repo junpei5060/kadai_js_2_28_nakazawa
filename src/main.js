@@ -2,7 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router/rourer.js';
 import store from  './store/store.js';
-import VueTypedJs from 'vue-typed-js';
 import Inview from 'vueinview';
 import moment from 'vue-moment'
 import BootstrapVue from 'bootstrap-vue'
@@ -11,7 +10,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
 Vue.config.productionTip = false
-Vue.use(VueTypedJs)
 Vue.use(Inview);
 Vue.use(moment)
 Vue.use(BootstrapVue)

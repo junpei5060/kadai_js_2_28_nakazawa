@@ -132,9 +132,11 @@ font-family:monospace;
 
 .card-text {
 color: #777;
-font-size: 10px;
+font-size: 14px;
 line-height: 1.5;
 font-family:monospace;
+margin: 0 auto;
+width: 80%;
 }
 
 /* ボタン */
