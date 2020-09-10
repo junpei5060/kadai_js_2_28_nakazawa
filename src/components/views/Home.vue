@@ -229,4 +229,37 @@ body:before{
     transform: rotate(10deg);
 }
 
+/* スマホ対応 */
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+h1{
+    font-size: 13px;
+    text-align: center;
+}
+.btn-circle-fishy {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+    transition: .4s;
+    position: fixed;
+    bottom: 22px;
+    right: 28px;
+    z-index: 1;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.btn-circle-fishy:hover {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+}
+
 </style>

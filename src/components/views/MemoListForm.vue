@@ -7,12 +7,12 @@
             <h1 class="title">あなたの記憶装置をつくろう</h1>
             <h2 class="sub">覚えた用語を追加しましょう</h2>
             <div class="cp_iptxt">
-                <input type="text" class="ef" placeholder="用語を入力"
+                <input type="text" class="ef" placeholder="用語"
                 v-model.trim="memo.title">
                 <span class="focus_line"><i></i></span>
             </div>
             <div class="cp_iptxt">
-                <textarea type="text" class="ef" placeholder="詳細を記入"
+                <textarea type="text" class="ef" placeholder="詳細"
                 v-model.trim="memo.description"/>
                 <span class="focus_line"><i></i></span>
             </div>
@@ -281,4 +281,41 @@ body:before{
     transition:800ms ease all;
 }
 
+/* スマホ対応 */
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+.title{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 18px;
+        color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #40E0D0, rgb(224, 108, 219), #FF0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:monospace;
+}
+
+.sub{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 0;
+    font-family:monospace;
+}
+
+.button{
+    background:rgb(224, 108, 219);
+    color:#fff;
+    border:none;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    width: 150px;
+    font-family: monospace;
+    padding-top: 15px;
+}
+
+}
 </style>
