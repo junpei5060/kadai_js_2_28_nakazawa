@@ -10,6 +10,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
 Vue.config.productionTip = false
+
 Vue.use(Inview);
 Vue.use(moment)
 Vue.use(BootstrapVue)

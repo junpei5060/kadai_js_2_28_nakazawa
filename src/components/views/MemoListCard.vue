@@ -1,3 +1,4 @@
+
 <template>
 <div container>
     <div class="card">
@@ -78,7 +79,6 @@ formatedDescription () {
 memos () {
     return this.$store.getters['memos/data']
 }
-
 },
 // watch: {
 // 'memo' (n, o) {
@@ -90,11 +90,9 @@ memos () {
 </script>
 
 <style scoped>
-
 body {
     background: #eee;
 }
-
 .container{
     margin: 0 auto;
 }
@@ -122,14 +120,12 @@ text-align: center;
 color: #0bd;
 font-family:monospace;
 }
-
 .card-sub{
     font-size: 12px;
     margin-top: 0;
     margin-bottom: 10px;
     font-family:monospace;
 }
-
 .card-text {
 color: #777;
 font-size: 14px;
@@ -138,7 +134,6 @@ font-family:monospace;
 margin: 0 auto;
 width: 80%;
 }
-
 /* ボタン */
 .button{
     font-family:monospace;
@@ -186,5 +181,4 @@ transform: translateY(-10px);
 width: 70%;
 height: 18px;
 }
-
 </style>
