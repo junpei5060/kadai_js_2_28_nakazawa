@@ -60,6 +60,7 @@ stop () {
     this.$store.dispatch('memos/stopListener')
 },
 remove (id) {
+    if(confirm('データが完全に削除されますが、問題ないですか？'))
     this.$store.dispatch('memos/deleteMemo', { id })
 }
 },
