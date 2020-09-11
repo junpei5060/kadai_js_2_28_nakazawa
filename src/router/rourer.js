@@ -36,7 +36,7 @@ const router =  new Router({
         component: Login
     },
     {
-        path: '/success',
+        path: '/success',redirect: '/',
         name: 'success',
         component: Success
     },

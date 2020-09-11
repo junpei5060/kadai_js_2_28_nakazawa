@@ -9,12 +9,6 @@
 </div>
 </template>
 
-<style>
-.mt-4 {
-margin-top: 4px;
-}
-</style>
-
 <script>
 import firebase from 'firebase/app'
 import router from '../../router/rourer'
@@ -33,3 +27,23 @@ logout() {
 }
 }
 </script>
+
+<style scoped>
+.mt-4 {
+margin-top: 4px;
+width: 500px;
+margin: 0 auto;
+}
+
+.container{
+    margin-top: 200px;
+    width: 1200px;
+}
+
+h2{
+    width: 500px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+}
+</style>

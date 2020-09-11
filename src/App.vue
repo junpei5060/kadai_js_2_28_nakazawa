@@ -9,6 +9,8 @@
                 <ul>
                     <li><router-link to="/">Home</router-link></li>
                     <li><router-link to="/form">新規作成</router-link></li>
+                    <li><span @click="logout">ログアウト</span></li>
+                    
                 </ul>
             </nav>
         </header>
@@ -21,16 +23,22 @@
 
 <script>
 
-
+import firebase from 'firebase/app'
+import router from './router/rourer'
 
 
 export default {
   name:'App',
-  components:{
-    // Home,
-    // // Plus,
-    // Memolist
-  }
+  methods: {
+  logout() {
+    firebase.auth().signOut().then(function() {
+    router.push('/')
+    }).catch(error => {
+    console.log(error.message)
+    router.push('/')
+    })
+}
+}
 }
 </script>
 
@@ -88,6 +96,7 @@ color: #FF8C00;
 background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+cursor: pointer;
 }
 v-enter-active, .v-leave-active {
   transition: opacity .5s;
