@@ -2,7 +2,7 @@
 <div>
 <home></home>
     <div class="memo-list container-fluent">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center d-flex justify-content-around" >
             <memo-list-card
             v-for="(memo, index) in memos"
             v-bind:key="index"
@@ -60,9 +60,7 @@ memos () {
 .memo-list {
 text-align: center;
 }
-.row {
-margin-left: 0%;
-}
+
 .btn-delete{
 display: inline-block;
 text-decoration: none;

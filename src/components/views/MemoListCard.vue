@@ -2,7 +2,8 @@
 <template>
 <div container>
     <div class="card">
-        <img class="card-img" src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        <span class="masking-tape"></span>
+        <!-- <img class="card-img" src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt=""> -->
         <div>
             <a class="button"  v-on:click="remove(memo.id)">
                 <span>削除</span></a>
@@ -98,18 +99,33 @@ body {
     margin: 0 auto;
 }
 .card {
-    margin: 30px auto;
-    width: 350px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ccc;
+        position: relative;
+    background: #F8F0D7;
+    border-left:4px dotted rgba(0,0,0,.1);
+    border-right:4px dotted rgba(0,0,0,.1);
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    padding: 1em;
+    color: #65513f;
+    width: 300px;
+    margin-top: 30px;
 }
-.card-img {
-    border-radius: 5px 5px 0 0;
-    max-width: 100%;
-    height: auto;
-    opacity: 0.7;
+
+.masking-tape{
+    position: absolute;
+    top: -1em;
+    left: 26%;
+    width:100px;
+    height:30px;
+    background-image: linear-gradient(-45deg, rgba(227,155,140,.4) 25%, transparent 25%, transparent 50%, rgba(227,155,140,.4) 50%, rgba(227,155,140,.4) 75%, transparent 75%, transparent 100%);
+    background-size: 20px 20px;
+    border-left:2px dotted rgba(0,0,0,.1);
+    border-right:2px dotted rgba(0,0,0,.1);
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    padding: 0.25em 2em;
+    color: #65513f;
+    transform: rotate(-4deg); 
 }
+
 .card-content {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -120,6 +136,22 @@ margin-bottom: 0px;
 text-align: center;
 color: #0bd;
 font-family:monospace;
+position: relative;
+padding: 0.6em;
+background: -webkit-repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+background: repeating-linear-gradient(-45deg, #fff5df, #fff5df 4px,#ffe4b1 3px, #ffe4b1 8px);
+border-radius: 7px;
+}
+
+.card-title::after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #ffebbe;
+    width: 0;
+    height: 0;
 }
 .card-sub{
     font-size: 12px;
@@ -156,7 +188,7 @@ text-align: center;
 -webkit-transition: .3s ease-in-out;
 transition: .3s ease-in-out;
 font-size: 10px;
-margin-left: 300px;
+margin-left: 180px;
 margin-bottom: 0;
 }
 .button::after {
