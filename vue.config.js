@@ -1,4 +1,5 @@
 module.exports = {
-    publicPath: '/kensaku/',
-    outputDir: 'docs'
+    outputDir: 'docs',
+    assetsDir: './',
+    publicPath: './'
 }
